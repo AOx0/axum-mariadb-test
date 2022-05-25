@@ -1,0 +1,18 @@
+[package]
+name = "axum-maria-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# For backend creation
+axum = "0.5.6"
+tokio = { version="1.18.2", features=["full"] }
+serde = { version="1.0.137", features=["derive"] }
+
+# For database administration
+diesel = { version="2.0.0-rc.0", features=["mysql", "r2d2"] }
+r2d2 = "0.8.9"
+dotenv = "0.15.0"
